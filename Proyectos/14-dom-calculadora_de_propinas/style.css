@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 17, 184);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: rgba(240, 248, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 5px 5px 10px 10px rgba(248, 248, 248, 0.534);
+    height: 50vh;
+    width: 100vh;
+    color: white;
+}
+
+.btn {
+    width: 140px;
+    height: 50px;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 10vh;
+    border: 2 solid black;
+}
+
+.input {
+    width: 250px;
+    height: 50px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+/* el -webkit-outer-spin-button y el -webkit-inner-spin-button eliminar o dar estilo a las flechas de incremento y decremento */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    /* el appearance sirve para eliminar la apariencia nativa de elementos como botones, inputs, selectores (dropdowns) o casillas de verificación */
+    appearance: none;
+    margin: 0;
+}
+
+h1 {
+    text-shadow: 2px 2px 0 black;
+    width: max-content;
+}
+
+h2 {
+    text-shadow: 2px 2px 0 black;
+    width: max-content;
+    font-size: large;
+}
+
+button:hover {
+    background-color: rgba(209, 189, 172, 0.767);
+    color: white;
+}
+
+input:hover {
+    background-color: rgba(223, 202, 183, 0.377);
+    color: white;
+}

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(90, 143, 223);
+    padding: 50px;
+    color: #ffffff;
+    border-radius: 20vh;
+    border: 3px solid black;
+}
+
+.container {
+    display: flex;
+    /* los bootnes tienen posición fija a la derecha con fixed, top, right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(150, 150, 150, 0.466);
+    /* el backdrop-filter sirve para dar desenfoque (blur) brillo, contraste o escala de grises, el background-color debe tener trransparencia para que se vea le filtro */
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid #000000;
+    /* el gap es la separacion entre los botones*/
+    gap: 6px;
+    /* el padding agranda el contenedor */
+    padding: 6px;
+}
+
+button {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    /* el transition: cubic-bezier sirve para crear curvas de tiempo personalizadas en transiciones y animaciones (x1, y1, x2, y2) valores entre 0 y 1 */
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+    /* el overflow determina si se oculta, se muestra, o se añaden barras de desplazaient, y el hidden sirve para recordar y ocultar cualquier cosa dle contenido */
+    overflow: hidden;
+    /* el white-space sirve para controlar los espacios en blanco y saltos del linea del html, y el nowrap le dice al navegador que no importa que tan largo es el texto que todo este en una linea */
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    /* el font-weight: bold aumenta el grosor de la letra haciendolo parecer negrilla */
+    font-weight: bold;
+}
+
+/* button i modifica los iconos para que quen en medio,quedan con las mimas dimensiones del button porque e lo que necesitamos que se vea */
+button i {
+    min-width: 52px;
+    font-size: 20px;
+}
+
+button span {
+    padding-right: 15px;
+}
+
+button:hover {
+    width: 170px;
+    max-width: 170px;
+}
+
+button.claro:hover {
+    background-color: rgba(248, 219, 192, 0.753);
+}
+
+button.lectura:hover {
+    background-color: rgba(232, 235, 185, 0.863);
+}
+
+button.oscuro:hover {
+    background-color: rgba(117, 135, 196, 0.53);
+}
+
+/*se pone el body para que se llame en el js. mira js we (no sé mano el google no se explica muy bien xd) */
+body.claro {
+    background-color: #ffffff;
+    color: black;
+}
+
+body.oscuro {
+    background-color: rgb(2, 1, 32);
+
+    .informacion {
+        background-color: rgb(13, 53, 114);
+        ;
+        border: 3px solid #ffffff;
+    }
+
+    .container {
+        background-color: rgba(77, 83, 110, 0.527);
+        border: 1px solid #ffffff;
+    }
+
+    button {
+        border: 1px solid #ffffff
+    }
+}
+
+body.lectura {
+    background-color: rgb(240, 241, 221);
+    filter: sepia(50%);
+}
