@@ -268,12 +268,54 @@ html {
 }
 
 .sobremi .fila .col .container-intereses .interes:hover {
-    background-color: #202075;
-}
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+} 
 
 .sobremi .fila .col .container-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+.interes1 {
+    border-color: #38bdf8 !important;
+    color: #38bdf8 !important;
+    background: linear-gradient(180deg, rgba(56,189,248,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes2 {
+    border-color: #818cf8 !important;
+    color: #818cf8 !important;
+    background: linear-gradient(180deg, rgba(129,140,248,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes3 {
+    border-color: #c084fc !important;
+    color: #c084fc !important;
+    background: linear-gradient(180deg, rgba(192,132,252,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes4 {
+    border-color: #2dd4bf !important;
+    color: #2dd4bf !important;
+    background: linear-gradient(180deg, rgba(45,212,191,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes5 {
+    border-color: #f472b6 !important;
+    color: #f472b6 !important;
+    background: linear-gradient(180deg, rgba(244,114,182,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes6 {
+    border-color: #fb923c !important;
+    color: #fb923c !important;
+    background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes7 {
+    border-color: #fb923c !important;
+    color: #fb923c !important;
+    background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
+}
+.interes8 {
+    border-color: #fb923c !important;
+    color: #fb923c !important;
+    background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
 }
 
 .sobremi button {
