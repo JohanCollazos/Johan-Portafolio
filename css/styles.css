@@ -278,9 +278,9 @@ html {
 }
 
 .interes1 {
-    border-color: #38bdf8 !important;
-    color: #38bdf8 !important;
-    background: linear-gradient(180deg, rgba(56,189,248,0.24), rgba(15,23,42,0.25)) !important;
+    border-color: #FF0000 !important;
+    color: #FF0000 !important;
+    background: linear-gradient(180deg, rgba(255,0,0,0.24), rgba(15,23,42,0.25)) !important;
 }
 .interes2 {
     border-color: #818cf8 !important;
@@ -298,9 +298,9 @@ html {
     background: linear-gradient(180deg, rgba(45,212,191,0.24), rgba(15,23,42,0.25)) !important;
 }
 .interes5 {
-    border-color: #f472b6 !important;
-    color: #f472b6 !important;
-    background: linear-gradient(180deg, rgba(244,114,182,0.24), rgba(15,23,42,0.25)) !important;
+    border-color: #72e7f4 !important;
+    color: #72e7f4 !important;
+    background: linear-gradient(180deg, rgba(114,231,244,0.24), rgba(15,23,42,0.25)) !important;
 }
 .interes6 {
     border-color: #fb923c !important;
@@ -308,20 +308,20 @@ html {
     background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
 }
 .interes7 {
-    border-color: #fb923c !important;
-    color: #fb923c !important;
-    background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
+    border-color: #0d4395 !important;
+    color: #0d4395 !important;
+    background: linear-gradient(180deg, rgba(13,67,149,0.24), rgba(15,23,42,0.25)) !important;
 }
 .interes8 {
-    border-color: #fb923c !important;
-    color: #fb923c !important;
-    background: linear-gradient(180deg, rgba(251,146,60,0.24), rgba(15,23,42,0.25)) !important;
+    border-color: #38bdf8 !important;
+    color: #38bdf8 !important;
+    background: linear-gradient(180deg, rgba(56,189,248,0.24), rgba(15,23,42,0.25)) !important;
 }
 
 .sobremi button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #FF0000;
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -338,7 +338,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(to right, rgba(32, 32, 117, 1), rgba(255, 0, 0, 1), rgb(89, 8, 8));
+    background: linear-gradient(to right, rgb(65, 64, 64));
     z-index: -1;
     transition: 1s;
 }
