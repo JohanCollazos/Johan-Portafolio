@@ -365,7 +365,7 @@ html {
 
 /*Section Skills*/
 .skills {
-    background-color: #252a2e;
+    background-color: rgb(65, 64, 64);
     color: #fff;
     padding: 50px 20px;
 }
@@ -404,7 +404,7 @@ html {
 }
 
 .skills .skill .barra-skill {
-    height: 8px;
+    height: 12px;
     width: 80%;
     border-radius: 10px;
     background-color: #131517;
@@ -418,7 +418,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    height: 8px;
+    height: 12px;
 }
 
 .skills .skill .barra-skill span {
@@ -630,17 +630,18 @@ html {
 .curriculum .fila .item {
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252a2e;
+    background-color: rgb(55, 54, 54);
     position: relative;
 }
 
 .curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #FF0000;
 }
 
 .curriculum .fila .item .casa {
-    color: #2828cd;
+    color: white;
     font-size: 22px;
     font-weight: bold;
     display: block;
@@ -648,7 +649,7 @@ html {
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #2828cd;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -657,18 +658,18 @@ html {
 }
 
 .curriculum .fila .izq {
-    border-right: 4px solid #202075;
+    border-right: 4px solid rgb(149, 32, 32);
     margin-right: 20px;
 }
 
 .curriculum .fila .der {
-    border-left: 4px solid #202075;
+    border-left: 4px solid rgb(149, 32, 32);
     margin-left: 20px;
 }
 
 .curriculum .fila .item .conector1 {
     height: 3px;
-    background-color: #202075;
+    background-color: rgb(149, 32, 32);
     width: 47px;
     position: absolute;
     top: 50%;
@@ -681,7 +682,7 @@ html {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #202075;
+    background-color: rgb(149, 32, 32);
     float: right;
     position: relative;
     bottom: 4px;
@@ -689,7 +690,7 @@ html {
 
 .curriculum .fila .item .conector2 {
     height: 3px;
-    background-color: #202075;
+    background-color: rgb(149, 32, 32);
     width: 47px;
     position: absolute;
     top: 50%;
@@ -702,7 +703,7 @@ html {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #202075;
+    background-color: rgb(149, 32, 32);
     float: left;
     position: relative;
     bottom: 4px;
@@ -715,7 +716,7 @@ html {
 
 /*Section Portafolio*/
 .portafolio {
-    background-color: #1e2326;
+    background-color: rgb(65, 64, 64);
     color: #fff;
     padding: 50px 20px;
 }
@@ -751,7 +752,8 @@ html {
     height: 350px;
     display: block;
     /*gap: 70px;*/
-    border: 3px solid rgba(0, 0, 0, 1);
+    border: 3px solid rgb(167, 7, 7);
+    border-radius: 15%;
 }
 
 .portafolio .galeria .proyecto .overlay {
@@ -760,8 +762,8 @@ html {
     width: 103%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(255, 0, 0, 1), rgba(65, 64, 64, 1));
-    border: 3px solid rgba(0, 0, 0, 1);
+    background: linear-gradient(rgba(207, 70, 70, 0.233), rgba(255, 0, 0, 0.538));
+    border: 3px solid rgb(167, 7, 7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -769,16 +771,17 @@ html {
     font-size: 20px;
     letter-spacing: 3px;
     opacity: 0;
+    border-radius: 15%;
 }
 
 .portafolio .galeria .proyecto h3 {
     margin-bottom: 20px;
     transition: 1s;
-    color: black;
+    color: white;
 }
 
 .portafolio .galeria .proyecto p {
-    color: black;
+    color: white;
 }
 
 .portafolio .galeria .proyecto .overlay:hover {
@@ -791,8 +794,7 @@ html {
 
 /*section contacto*/
 .contacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.6)),
-        url(../img/Fondo2.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), ;
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
@@ -920,7 +922,25 @@ footer .redes a {
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: 3s;
+    transition: .5s;
+}
+
+footer .redes .facebook:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(40deg, #1466d1, #5b8dcf);
+    border-color: #1466d1;
+}
+
+footer .redes .instagram:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(40deg, rgb(230, 133, 6), rgb(230, 6, 6), rgb(230, 6, 230) 100%);
+    border-color: #e4405f;
+}
+
+footer .redes .linkedin:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(40deg, #0a66c2, #6c9ccc);
+    border-color: #0a66c2;
 }
 
 footer .arriba {
@@ -938,7 +958,13 @@ footer .arriba {
     font-size: 18px;
 }
 
-/*Media Queries - Responsive*/
+footer small {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 18px;
+}
+
+/*Media Queries - Responsive. Barra de opciones desplegable*/
 @media screen and (max-width:980px) {
     nav {
         display: none;
@@ -953,18 +979,43 @@ footer .arriba {
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252a2e;
+        background-color: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(5px);
         width: 180px;
         border-radius: 15px;
     }
 
     nav.responsive ul {
         display: block !important;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }
+
+    nav.responsive ul li:last-child {
+        border-bottom: none;
+    }
+
+/*El display hace que el sombreado llegue hasta el fondo pero a la vez cambia la barra de navegacion*/
+    nav.responsive ul li a {
+        display: block;
+        padding: 16px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    nav.responsive ul li a:hover {
+        background-color: rgba(255, 51, 51, 0.1);
+        color: #ff3333;
+        padding-left: 28px;
+        border-left: 4px solid #ff3333;
     }
 }
 
